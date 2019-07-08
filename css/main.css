@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Quattrocento|Questrial");
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Questrial", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+}
+/* img style */
+img {
+  width: 100%;
+}
+
+/* BG Styles */
+.lt-bg {
+  background: #dadedf;
+}
+.dk-bg {
+  background: #111;
+}
+
+/* Text Styles */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Archivo Black";
+}
+h1 {
+  font-size: 3.75rem;
+  padding-bottom: 1.875rem;
+}
+h2 {
+  font-size: 3em;
+  padding-bottom: 1.5rem;
+}
+h3 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+p {
+  line-height: 25px;
+}
+blockquote {
+  font-size: 1.5rem;
+  font-family: "Quattrocento";
+  line-height: 40px;
+}
+.lt-txt {
+  color: #fff;
+}
+
+.dk-txt {
+  color: #0a0a0a;
+}
+.optional {
+  opacity: 0.5;
+}
+.black-highlight {
+  background: #000;
+  padding: 0.1rem;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Button Styles */
+.btn-lt {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px #fff solid;
+  border-radius: 50px;
+  padding: 0.25rem 0.75rem;
+  margin: 1.5rem;
+}
+.btn-lt:hover {
+  color: #0a0a0a;
+  background: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-dk {
+  text-decoration: none;
+  color: #0a0a0a;
+  text-transform: uppercase;
+  border: 1px #0a0a0a solid;
+  border-radius: 5px;
+  padding: 0.25rem 0.75rem;
+  margin: 1.5rem;
+}
+.btn-dk:hover {
+  color: #fff;
+  background: #0a0a0a;
+  transition: 0.2s ease-in-out;
+}
+
+/* Container Styles */
+.fillscreen {
+  height: 100vh;
+}
+.flex-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.flex-container-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.content-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+.privacy-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+.textbox {
+  width: 100%;
+  padding: 4rem;
+}
+.card-container {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card-lg {
+  /* top: 10%; */
+  width: 90%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+.quote-content {
+  width: 100%;
+  height: 50vh;
+}
+.form-container {
+  width: 80%;
+  padding: 5%;
+  display: grid;
+  display: -webkit-grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 33px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 10px 10px 33px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 33px 0px rgba(0, 0, 0, 0.6);
+}
+/* Toggle Styles */
+.quote {
+  top: 40%;
+  transform: translateY(-40%);
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease;
+}
+.quote-img {
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.show {
+  opacity: 1;
+}
+.active {
+  -webkit-box-shadow: 0px 11px 1px -10px rgba(160, 160, 160, 0.28);
+  -moz-box-shadow: 0px 11px 1px -10px rgba(160, 160, 160, 0.28);
+  box-shadow: 0px 11px 1px -10px rgba(160, 160, 160, 0.28);
+  padding-bottom: 15px;
+}
+.centralize {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+.mobile {
+  display: none;
+}

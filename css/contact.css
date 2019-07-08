@@ -1,0 +1,113 @@
+@import url(main.css);
+#sec4 {
+  width: 100%;
+  height: 100vh;
+  /* position: relative; */
+}
+#sec4 .content-wrapper {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+}
+.quote-container {
+  grid-column: 1;
+}
+/* .quote-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}*/
+#div1 {
+  grid-column: 2;
+  height: 100vh;
+}
+#div1 .flex-container-col {
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+/* Old Code */
+#sec4 .quote,
+#sec4 h2 {
+  position: absolute;
+  z-index: 20;
+  text-align: center;
+}
+#sec4 h2 {
+  font-size: 2rem;
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 300ms ease-in-out;
+}
+
+#slidebg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.quote1,
+.quote2,
+.quote3,
+.quote4,
+.quote5,
+.quote6 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+}
+
+.quote1 {
+  background-image: url(../img/bgImages/Quotes/castle-black.jpg);
+  z-index: 1;
+}
+.quote2 {
+  background-image: url(../img/bgImages/Quotes/winterfell.png);
+  z-index: 2;
+}
+.quote3 {
+  background-image: url(../img/bgImages/Quotes/Meereen.png);
+  z-index: 3;
+}
+.quote4 {
+  background-image: url(../img/bgImages/Quotes/highgarden.jpg);
+  z-index: 4;
+}
+.quote5 {
+  background-image: url(../img/bgImages/Quotes/kingslanding-bg.jpg);
+  z-index: 5;
+}
+.quote6 {
+  background-image: url(../img/bgImages/Quotes/grayjoy.jpg);
+  z-index: 6;
+}
+.card-lg h3 {
+  padding-bottom: 0.1rem;
+}
+
+.card-lg img {
+  width: 20rem;
+  padding-bottom: 1rem;
+  border-radius: 3px;
+}
+.card-lg blockquote {
+  flex-basis: 50%;
+}
+.quotefoot {
+  float: right;
+}
+/* DIVIDER 1 */
+
+.selector a > img {
+  width: 50%;
+  transition: 500ms ease-in-out;
+}
+.selector a > img:hover {
+  opacity: 0.4;
+}
