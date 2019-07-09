@@ -88,7 +88,7 @@
 
 /* Section3 */
 #sec3 {
-  height: 50vh;
+  height: 65vh;
   display: flex;
   display: -webkit-flex;
   align-items: center;
@@ -286,7 +286,7 @@
 
 /* Footer */
 footer {
-  height: 30vh;
+  height: 40vh;
   font-size: 14px;
 }
 footer a {
